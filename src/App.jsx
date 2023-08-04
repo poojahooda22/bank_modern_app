@@ -1,7 +1,12 @@
 import styles from './style';
 import {Navbar, Hero, Billing, Business, Clients, CTA, Footer, Stats, Testimonials, CardDeal} from './components';
+import MouseFollower from "mouse-follower";
+import gsap from "gsap";
 
 
+
+MouseFollower.registerGSAP(gsap);
+const cursor = new MouseFollower();
 const App = () => {
   return (
     <div className= 'bg-primary w-full overflow-hidden'>
